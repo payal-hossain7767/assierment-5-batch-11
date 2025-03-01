@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="bg-[#E6B2BA] min-h-screen">
+<body id="backgound" class="bg-[#E6B2BA] min-h-screen ">
     <header class="w-[1535px] m-auto ">
         <!-- nav -->
         <nav class="border-2  border-[#E6B2BA]">
@@ -27,10 +27,10 @@
                         <div
                             class="btn btn-ghost text-xl flex justify-center items-center gap-2 bg-[#F4F7FF] p-2 rounded-xl">
                             <img src="./img/checkbox.png" alt="">
-                            <h2>25</h2>
+                            <h2 id="score-count">25</h2>
                         </div>
                         <li>
-                            <img src="./img/theme-btn.png" alt="">
+                            <img id="random-color" src="./img/theme-btn.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -47,7 +47,7 @@
                             </div>
                             <div>
                                 <div class="stat-title">Task Assigned</div>
-                                <div class="stat-value text-black">05</div>
+                                <div id="task-assigned" class="stat-value text-black">5</div>
                             </div>
                         </div>
                     </div>
@@ -86,14 +86,14 @@
                                 <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
                             </h2>
                             <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
-                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
-                                a body part, and inside body </p>
+                            <p class="bg-[#ffff] rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
                             <div class="card-actions justify-between items-center mt-2">
                                 <div>
                                     <h3>Deadline</h3>
                                     <h4>21 March 2025</h4>
                                 </div>
-                                <div class="btn btn-primary">Completed</div>
+                                <div  class="btn btn-primary completed">Completed</div>
                             </div>
                         </div>
                     </div>
@@ -101,17 +101,16 @@
                     <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                                <div class="bg-[#ffff] rounded-lg p-2">CloudSync</div>
                             </h2>
-                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
-                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
-                                a body part, and inside body </p>
+                            <h1 class="text-xl font-bold">Add Dark Mode </h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect. </p>
                             <div class="card-actions justify-between items-center mt-2">
                                 <div>
                                     <h3>Deadline</h3>
                                     <h4>21 March 2025</h4>
                                 </div>
-                                <div class="btn btn-primary">Completed</div>
+                                <div  class="btn btn-primary completed">Completed</div>
                             </div>
                         </div>
                     </div>
@@ -119,24 +118,24 @@
                     <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                                <div class="bg-[#ffff] rounded-lg p-2">SwiftPay</div>
                             </h2>
-                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
-                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
-                                a body part, and inside body </p>
+                            <h1 class="text-xl font-bold">Optimize  Home page</h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
                             <div class="card-actions justify-between items-center mt-2">
                                 <div>
                                     <h3>Deadline</h3>
                                     <h4>21 March 2025</h4>
                                 </div>
-                                <div class="btn btn-primary">Completed</div>
+                                <div class="btn btn-primary completed">Completed</div>
                             </div>
                         </div>
                     </div>
 
                 </section>
                 <!--  -->
-                <section></section>
+
             </section>
             <!--  -->
             <section class="w-1/4  bg-[#ffff] p-4 rounded-xl">
@@ -161,7 +160,7 @@
 
 
 
-
+    <script src="./js/utility.js"></script>
     <script src="js/script.js"></script>
 </body>
 
