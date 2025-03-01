@@ -1,3 +1,6 @@
+//    innertext
 function setinnerText(id , status){
-    document.getElementById(id).innerText=status;
+   const timeberText =document.getElementById(id).innerText=status;
+    const text =  parseInt(timeberText);
+   return text;
 }
