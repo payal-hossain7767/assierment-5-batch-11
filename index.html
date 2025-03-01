@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,157 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+
+<body class="bg-[#E6B2BA] min-h-screen">
+    <header class="w-[1535px] m-auto ">
+        <!-- nav -->
+        <nav class="border-2  border-[#E6B2BA]">
+            <div class="navbar mt-4 rounded-xl bg-[#FFFFFF] flex justify-center items-center">
+                <div class="flex-1 gap-3 ">
+                    <img src="./img/logo.png" alt="">
+                    <a class="text-3xl">Dev <span class="text-3xl font-bold">Board</span></a>
+                </div>
+                <div class="flex-none ">
+                    <ul class="menu menu-horizontal px-1 gap-4 ">
+                        <div
+                            class="btn btn-ghost text-xl flex justify-center items-center gap-2 bg-[#F4F7FF] p-2 rounded-xl">
+                            <img src="./img/checkbox.png" alt="">
+                            <h2>25</h2>
+                        </div>
+                        <li>
+                            <img src="./img/theme-btn.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- section -->
+        <main class="mt-5 flex  justify-between gap-4">
+            <section class="bg-[#ffff] rounded-xl w-8/11 ">
+                <section class="flex justify-between items-center">
+                    <div class="stats shadow bg-[#E6B2BA] m-4">
+                        <div class="stat flex">
+                            <div class="stat-figure text-primary">
+                                <img src="./img/checkbox.png" alt="">
+                            </div>
+                            <div>
+                                <div class="stat-title">Task Assigned</div>
+                                <div class="stat-value text-black">05</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div
+                        class="w-[543px] h-[103px]  rounded-xl bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
+                        <div class="stat flex">
+                            <div class="stat-figure text-primary">
+                                <img src="./img/board.png" alt="">
+                            </div>
+                            <div>
+                                <div class="stat-title text-2xl text-[#ffff] ">Discover Something <br> New Today!</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="stats shadow bg-[#E6B2BA] m-4">
+                        <div class="stat flex">
+                            <div class="stat-figure text-primary">
+                                <img src="./img/calender.png" alt="">
+                            </div>
+                            <div>
+                                <div class="stat-title font-bold">Wed ,</div>
+                                <div class="stat-value text-black">Jul 28 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  -->
+                <section class="flex justify-between m-4 gap-4">
+                    <!-- 1st card -->
+                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                            </h2>
+                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
+                                a body part, and inside body </p>
+                            <div class="card-actions justify-between items-center mt-2">
+                                <div>
+                                    <h3>Deadline</h3>
+                                    <h4>21 March 2025</h4>
+                                </div>
+                                <div class="btn btn-primary">Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--2st card  -->
+                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                            </h2>
+                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
+                                a body part, and inside body </p>
+                            <div class="card-actions justify-between items-center mt-2">
+                                <div>
+                                    <h3>Deadline</h3>
+                                    <h4>21 March 2025</h4>
+                                </div>
+                                <div class="btn btn-primary">Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd card -->
+                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                            </h2>
+                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">A card component has a figure,
+                                a body part, and inside body </p>
+                            <div class="card-actions justify-between items-center mt-2">
+                                <div>
+                                    <h3>Deadline</h3>
+                                    <h4>21 March 2025</h4>
+                                </div>
+                                <div class="btn btn-primary">Completed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!--  -->
+                <section></section>
+            </section>
+            <!--  -->
+            <section class="w-1/4  bg-[#ffff] p-4 rounded-xl">
+                <div class="flex gap-4 justify-center items-center">
+                    <img src="./img/activity.png" alt="">
+                    <h2>Activity Log</h2>
+
+                </div>
+                <!--  -->
+                <div class="flex justify-center mt-4 mb-4">
+                    <button class="btn btn-primary ">Clear History</button>
+                </div>
+                <!--  -->
+                <hr>
+                <!--  -->
+                <div>
+
+                </div>
+            </section>
+        </main>
+    </header>
+
+
+
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
