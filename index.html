@@ -10,14 +10,15 @@
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 
 </head>
 
-<body id="backgound" class="bg-[#E6B2BA] min-h-screen ">
-    <header class="w-[1535px] m-auto ">
+<body id="backgound" class="bg-[#F4F7FF]  poppins-thin">
+    <header class="container mx-auto ">
         <!-- nav -->
-        <nav class="border-2  border-[#E6B2BA]">
-            <div class="navbar mt-4 rounded-xl bg-[#FFFFFF] flex justify-center items-center">
+        <nav class="">
+            <div class="navbar rounded-xl bg-[#FFFFFF] flex justify-center items-center">
                 <div class="flex-1 gap-3 ">
                     <img src="./img/logo.png" alt="">
                     <a class="text-3xl">Dev <span class="text-3xl font-bold">Board</span></a>
@@ -27,10 +28,10 @@
                         <div
                             class="btn btn-ghost text-xl flex justify-center items-center gap-2 bg-[#F4F7FF] p-2 rounded-xl">
                             <img src="./img/checkbox.png" alt="">
-                            <h2 id="score-count">25</h2>
+                            <h2 id="score-count">24</h2>
                         </div>
                         <li>
-                            <img id="random-color" src="./img/theme-btn.png" alt="">
+                            <img id="random-color" onclick="changeBackgroundColor()" src="./img/theme-btn.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -40,7 +41,7 @@
         <main class="mt-5 flex  justify-between gap-4">
             <section class="bg-[#ffff] rounded-xl w-8/11 ">
                 <section class="flex justify-between items-center">
-                    <div class="stats shadow bg-[#E6B2BA] m-4">
+                    <div class="stats shadow bg-[#F4F7FF] m-4">
                         <div class="stat flex">
                             <div class="stat-figure text-primary">
                                 <img src="./img/checkbox.png" alt="">
@@ -65,24 +66,24 @@
                         </div>
                     </div>
                     <!--  -->
-                    <div class="stats shadow bg-[#E6B2BA] m-4">
+                    <div class="stats shadow bg-[#F4F7FF] m-4">
                         <div class="stat flex">
                             <div class="stat-figure text-primary">
                                 <img src="./img/calender.png" alt="">
                             </div>
                             <div>
-                                <div class="stat-title font-bold">Wed ,</div>
-                                <div class="stat-value text-black">Jul 28 2025</div>
+                                <div id="date-is-on-day" class="stat-value text-black">Wed </div>
+                                <div id="date-is-on" class="stat-value text-black"> Jul 28 2025</div>
                             </div>
                         </div>
                     </div>
                     <!--  -->
-                    
+
                 </section>
                 <!--  -->
                 <section class="flex justify-between m-4 gap-4">
                     <!-- 1st card -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm">
                         <div class="card-body">
                             <h2 class="card-title">
                                 <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
@@ -101,7 +102,7 @@
                         </div>
                     </div>
                     <!--2st card  -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm">
                         <div class="card-body">
                             <h2 class="card-title">
                                 <div class="bg-[#ffff] rounded-lg p-2">CloudSync</div>
@@ -119,7 +120,7 @@
                         </div>
                     </div>
                     <!-- 3rd card -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm">
                         <div class="card-body">
                             <h2 class="card-title">
                                 <div class="bg-[#ffff] rounded-lg p-2">SwiftPay</div>
@@ -142,12 +143,12 @@
                 <!--  -->
                 <section class="flex justify-between m-4 gap-4">
                     <!-- 1st card -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <div class="bg-[#ffff] rounded-lg p-2">ShopEase</div>
+                                <div class="bg-[#ffff] rounded-lg p-2">Meta</div>
                             </h2>
-                            <h1 class="text-xl font-bold">Fix Mobile Button Issue </h1>
+                            <h1 class="text-xl font-bold">Add new emoji 🤲 </h1>
                             <p class="bg-[#ffff] rounded-xl p-2">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -161,14 +162,15 @@
                         </div>
                     </div>
                     <!--2st card  -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm ">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <div class="bg-[#ffff] rounded-lg p-2">CloudSync</div>
+                                <div class="bg-[#ffff] rounded-lg p-2">Google LLC</div>
                             </h2>
-                            <h1 class="text-xl font-bold">Add Dark Mode </h1>
-                            <p class="bg-[#ffff] rounded-xl p-2">Store the user's preference in localStorage, update CSS
-                                variables dynamically, and apply a smooth transition effect. </p>
+                            <h1 class="text-xl font-bold">Integrate OpenAI API </h1>
+                            <p class="bg-[#ffff] rounded-xl p-2">Debug using Chrome DevTools, check for overlapping
+                                elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
                             <div class="card-actions justify-between items-center mt-2">
                                 <div>
                                     <h3>Deadline</h3>
@@ -179,12 +181,12 @@
                         </div>
                     </div>
                     <!-- 3rd card -->
-                    <div class="card bg-[#E6B2BA] w-96 shadow-sm border-2 border-red-300">
+                    <div class="card bg-[#F4F7FF] w-96 shadow-sm ">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <div class="bg-[#ffff] rounded-lg p-2">SwiftPay</div>
+                                <div class="bg-[#ffff] rounded-lg p-2">Glassdoar</div>
                             </h2>
-                            <h1 class="text-xl font-bold">Optimize Home page</h1>
+                            <h1 class="text-xl font-bold">Improve Job searching </h1>
                             <p class="bg-[#ffff] rounded-xl p-2">Debug using Chrome DevTools, check for overlapping
                                 elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -216,17 +218,18 @@
                 <!--  -->
                 <div class="clear-my-history" id="clear">
                     <!-- <h1 class="mt-2 bg-[#E6B2BA] p-2 rounded-md">You have Complete The Task Add Dark Mode at</h1> -->
-                     <span id="time-to-meet" class="hidden">12:48:15 PM</span>
+                    <span id="time-to-meet" class="hidden">12:48:15 PM</span>
                 </div>
             </section>
         </main>
     </header>
 
-
+    <script src="./js/randomcolor.js"></script>
     <script src="./js/utility.js"></script>
     <script src="js/script.js"></script>
     <script src="js/clearhistory.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/backtohome.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ for (const btn of btnClassSeleat) {
         const div = document.createElement('div');
 
         const p = document.createElement('p')
-        p.innerHTML = `<h1 class="mt-2 bg-[#E6B2BA] p-2 rounded-md">You have Complete ${addToTimeLine} at Time ${lootTime}</h1>`
+        p.innerHTML = `<h1 class="mt-2 bg-[#F4F7FF] p-2 rounded-md">You have Complete ${addToTimeLine} at Time ${lootTime}</h1>`
         div.appendChild(p);
         seleatContaineclear.appendChild(div)
 
@@ -33,6 +33,9 @@ for (const btn of btnClassSeleat) {
 
         number = number + 1;
         const chackBorad = setinnerText('score-count', number)
+        if(count <= 0){
+            alert('congreates!! you have completed all the current task');
+        }
 
     })
 }
