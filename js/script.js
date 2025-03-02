@@ -26,10 +26,7 @@ for (const btn of btnClassSeleat) {
         p.innerHTML = `<h1 class="mt-2 bg-[#F4F7FF] p-2 rounded-md">You have Complete ${addToTimeLine} at Time ${lootTime}</h1>`
         div.appendChild(p);
         seleatContaineclear.appendChild(div)
-
-
-       
-
+        
         count = count - 1;
         const firsttime = setinnerText('task-assigned', count);
 
