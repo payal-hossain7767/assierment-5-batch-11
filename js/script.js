@@ -1,6 +1,6 @@
 const btnClassSeleat = document.getElementsByClassName('completed')
 let count = 6
-let number = 25;
+let number = 24;
 
 for (const btn of btnClassSeleat) {
     btn.addEventListener('click', (e) => {
@@ -27,6 +27,8 @@ for (const btn of btnClassSeleat) {
         div.appendChild(p);
         seleatContaineclear.appendChild(div)
 
+
+       
 
         count = count - 1;
         const firsttime = setinnerText('task-assigned', count);
